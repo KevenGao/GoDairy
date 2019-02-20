@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guid_backgroud3">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="83dp"
+        android:background="#1fffffff">
+
+        <TextView
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="精灵日记"
+            android:textColor="#e14c3c"
+
+            android:textSize="55dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="169dp"
+        android:background="#1fffffff">
+
+        <TextView
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Every day is wonderful!"
+            android:textColor="#7959ef"
+
+            android:textSize="30dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/skip"
+        android:layout_width="111dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="立即体验"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:background="#71ffffff"
+        />
+
+</RelativeLayout>

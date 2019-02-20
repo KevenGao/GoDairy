@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroun10"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/im_close"
+            android:layout_width="43dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/mainactivity_publish_publish2" />
+
+        <Button
+            android:id="@+id/read_contact"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="0dp"
+            android:text="读取联系人"
+            android:textColor="#6f87d8"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/contacts_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#94ffffff"
+        >
+
+
+    </ListView>
+
+
+</LinearLayout>

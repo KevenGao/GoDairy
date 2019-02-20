@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background7"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#f1f5fa"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="我的主页"
+        android:textColor="#ec3b35"
+        android:textSize="23dp" />
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="40dp"
+        android:layout_height="32dp"
+        android:background="@drawable/backed" />
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="#dfd43a06"
+        android:text="去登录"
+        android:textColor="#fff"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="104dp"
+            android:layout_height="104dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="43dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/touxiang" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="248dp">
+
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/love_guide" />
+
+        <TextView
+            android:layout_width="67dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#f2d5bf"
+            android:gravity="center"
+            android:text="账号"
+            android:textColor="#9a53f2"
+            android:textSize="20dp" />
+
+
+        <EditText
+            android:id="@+id/userid"
+            android:layout_width="325dp"
+            android:layout_height="match_parent"
+            android:background="#52ffffff"
+            android:gravity="center_horizontal"
+            android:textColor="#7144ef"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="201dp">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/wode2" />
+
+        <TextView
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="#f2d5bf"
+            android:gravity="center"
+            android:text="昵称"
+            android:textColor="#9a53f2"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="#22ffffff"
+            android:gravity="center"
+            android:text="我的昵称" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rijiye"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="154dp">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/me_diary" />
+
+        <TextView
+
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:background="#f2d5bf"
+            android:gravity="center"
+            android:text="日记"
+            android:textColor="#9a53f2"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/shoudiantong"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp">
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/deng" />
+
+        <TextView
+
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#f2d5bf"
+            android:gravity="center"
+            android:text="手电筒"
+            android:textColor="#9a53f2"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rili"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="109dp">
+
+
+        <ImageView
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/me_rili" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#f2d5bf"
+            android:gravity="center"
+            android:text="日历"
+            android:textColor="#9a53f2"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/data"
+            android:layout_width="267dp"
+            android:layout_height="37dp"
+            android:background="#4fffffff"
+            android:textColor="#001716"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/out"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="退出" />
+
+</RelativeLayout>

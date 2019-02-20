@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroun10"
+    android:orientation="vertical">
+
+    <com.example.kevengao.godairy.view.AbScrollView
+        android:id="@+id/absclv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_title"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.example.kevengao.godairy.view.MyGridView
+                android:id="@+id/lv_notes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:verticalSpacing="10dp"/>
+        </LinearLayout>
+    </com.example.kevengao.godairy.view.AbScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/navigationbar_bg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="#c5e4f0"
+            android:gravity="center_horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/iv_serch2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="58dp"
+                android:background="@drawable/serch1"
+                android:onClick="onAbout"
+                android:scaleType="fitXY"
+                tools:ignore="RtlCompat" />
+
+            <ImageView
+                android:id="@+id/iv_serch"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/title_edittext_search"
+                android:scaleType="fitXY"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:layout_width="78dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="63dp"
+                android:text="精灵日记"
+                android:textSize="17dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/more"
+                android:onClick="onAbout"
+                android:scaleType="fitXY"
+                tools:ignore="RtlCompat" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="465dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/navigationbar_bg">
+
+        <LinearLayout
+            android:id="@+id/llBtnMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@null"
+                android:src="@drawable/mainactivity_publish_publish" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:clickable="true"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_wode"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@null"
+                android:src="@drawable/wode" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bt_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_zhuye"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@null"
+                android:src="@drawable/writing" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dongtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="80dp"
+            android:clickable="true"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_dongtai"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@null"
+                android:src="@drawable/dongtai" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/guanzhu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="78dp"
+            android:clickable="true"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_guanzhu"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="4dp"
+                android:contentDescription="@null"
+                android:src="@drawable/guanzhu" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="173dp"
+            android:layout_height="219dp"
+            android:layout_above="@+id/llBtnMenu"
+            android:layout_alignParentStart="true"
+            app:srcCompat="@drawable/jingling" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
